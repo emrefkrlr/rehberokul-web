@@ -99,7 +99,8 @@
 					break;
 				}
 			}
-			if ($schoolTypeId > 0) {
+
+			if ($schoolTypeId >= 0) {
 				//Filtreler
 				$filterActive = 0;
 				if(isset($_GET['iller']) && !isset($_GET['ilceler'])) {
@@ -161,6 +162,7 @@
 					$filterImkanIds = array_merge($filterImkanIds, $yabaciDiller);
 					$filterActive = 1;
 				}
+
 				if ($filterActive) {
 					foreach ($searchTerms as $singleSearchTerm) {
 						if (count($searchIlIds)) {
@@ -176,7 +178,10 @@
 							$db->where('counselor', $searchPsikolojikDanisman);
 						}
 						$db->where("address", '%'.$singleSearchTerm.'%', 'like');
-						$db->where('type', $schoolTypeId);
+						if ($schoolTypeId != 0 ){
+                            $db->where('type', $schoolTypeId);
+                        }
+
 						$schoolsByFilter = $db->get("school");
 						if ($db->count) {
 							foreach ($schoolsByFilter as $schoolByFilter) {
@@ -234,10 +239,18 @@
 								    array_push($searchSchoolIds, $result['id']);
 								}
 							}
-						}
+						}else{
+                            $searchSchoolsByType = $db->rawQuery("SELECT * FROM school WHERE address LIKE '%".$singleSearchTerm."%'");
+                            foreach ($searchSchoolsByType as $result) {
+                                if (!in_array($result['id'], $searchSchoolIds)) {
+                                    array_push($searchSchoolIds, $result['id']);
+                                }
+                            }
+                        }
 			    	}
 				}
 			} else {
+
 			    // okulları diğer parametreler ile de arıyor
 				foreach ($searchTerms as $singleSearchTerm) {
 		    		$db->where("name", '%'.$singleSearchTerm.'%', 'like');
