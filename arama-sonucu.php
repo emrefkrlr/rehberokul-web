@@ -77,13 +77,15 @@
 	    	foreach ($searchTerms as $singleSearchTerm) {
 	    	    // okul tipi id sini alıyor
 				$searchSchoolsByType = $db->rawQuery("SELECT id FROM school_type WHERE name LIKE '%".$singleSearchTerm."%' LIMIT 1");
+
 				if ($searchSchoolsByType[0]['id'] > 0) {
 					$schoolTypeId = $searchSchoolsByType[0]['id'];
 				} else {
                     // boş gelmesi durumu
 	                foreach ($schoolTypesArray as $singleSchoolType) {
+
 	                    // boş olma durumunda $schoolTypesArray içindeki tüm elemanların id sini alıyor
-	                    if (strpos($singleSearchTerm, $singleSchoolType) !== false) {
+	                    if (strpos(strtolower($singleSearchTerm), $singleSchoolType) !== false) {
 	                        $searchSchoolsByType = $db->rawQuery("SELECT id FROM school_type WHERE name LIKE '%".$singleSchoolType."%' LIMIT 1");
 							if ($searchSchoolsByType[0]['id'] > 0) {
 								$schoolTypeId = $searchSchoolsByType[0]['id'];

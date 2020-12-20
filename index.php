@@ -8,7 +8,12 @@
     $pageSocialImagePath = "images/rehberokul/rehber-okul.jpg";
     $twitterUsername = "rehberokul";
     $pageUrl = WEBURL."";
+if (SUBFOLDER){
+    $robotsStatus = "noindex, nofollow";
+}else{
     $robotsStatus = "index, follow";
+}
+
 
 
     function GetIP(){

@@ -4,7 +4,11 @@ require_once('php/Core.php');
 if (isset($_SERVER['REQUEST_URI'])) {
     $url = array_filter(explode('/', $_SERVER['REQUEST_URI']));
     if ($url > 2) {
-        $getRegion = $url[1] .'/' .$url[2];
+        if(SUBFOLDER){
+            $getRegion = $url[2] .'/' .$url[3];
+        }else{
+            $getRegion = $url[1] .'/' .$url[2];
+        }
     }else{
         $getRegion = ltrim($_SERVER['REQUEST_URI'], "/");
     }
@@ -18,7 +22,12 @@ if (isset($_SERVER['REQUEST_URI'])) {
     $pageUrl = WEBURL . ltrim($_SERVER['REQUEST_URI'], "/");
     $headerContent = $getRegionQuery[0]['header_content'];
     $landingContent = $getRegionQuery[0]['landing_content'];
-    $robotsStatus = "index, follow";
+    if (SUBFOLDER){
+        $robotsStatus = "noindex, nofollow";
+    }else{
+        $robotsStatus = "index, follow";
+    }
+
 
 
 

@@ -6,7 +6,12 @@
     $pageSocialImagePath = "images/rehberokul/rehber-okul.jpg";
     $twitterUsername = "rehberokul";
     $pageUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+if (SUBFOLDER){
+    $robotsStatus = "noindex, nofollow";
+}else{
     $robotsStatus = "index, follow";
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="tr">

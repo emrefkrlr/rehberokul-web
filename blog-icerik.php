@@ -1,6 +1,11 @@
 <?php
     require_once('php/Core.php');
+if (SUBFOLDER){
+    $robotsStatus = "noindex, nofollow";
+}else{
     $robotsStatus = "index, follow";
+}
+
 
     $crumbs = explode("/",$_SERVER["REQUEST_URI"]);
     $delete_first = array_shift($crumbs);
