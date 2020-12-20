@@ -1,0 +1,8 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^([a-zA-ZçÇöÖüÜşŞİığĞ]*)/?([a-zA-ZçÇöÖüÜşŞİığĞ_-]*)?/?([a-zA-Z0-9_-]*)?/?$ index.php?controller=$1&action=$2&id=$3 [NC,L]
