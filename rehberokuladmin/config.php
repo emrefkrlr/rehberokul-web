@@ -1,15 +1,15 @@
 <?php
 // Define DB Params
 
-define("DB_HOST", "localhost");
-define("DB_USER", "rehberok_web_user");
-define("DB_PASS", "P(ie*igC*juoRehberO");
-define("DB_NAME", "rehberok_web_db");
+define("DB_HOST", "localhost:8889");
+define("DB_USER", "root");
+define("DB_PASS", "root");
+define("DB_NAME", "rehberok_test_db");
 
 // Define URL
 define("APP_TITLE", "Rehber Okul");
-define("ROOT_PATH", "https://www.rehberokul.com/rehberokuladmin/");
-define("ROOT_URL", "https://www.rehberokul.com/rehberokuladmin/");
+define("ROOT_PATH", "http://localhost:8888/rehberokul-web/rehberokuladmin/");
+define("ROOT_URL", "http://localhost:8888/rehberokul-web/rehberokuladmin/");
 
 //Define Timezone
 define("TIME_ZONE", "Europe/Istanbul");

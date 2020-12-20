@@ -7,7 +7,12 @@ $pageDescription = "Size faydalı olacak tüm yazılarımızı kategoriler altı
 $pageSocialImagePath = "images/rehberokul/rehber-okul.jpg";
 $twitterUsername = "rehberokul";
 $pageUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
-$robotsStatus = "index, follow";
+if (SUBFOLDER){
+    $robotsStatus = "noindex, nofollow";
+}else{
+    $robotsStatus = "index, follow";
+}
+
 
 if (isset($_SERVER['REQUEST_URI'])) {
     $url = array_filter(explode('/', $_SERVER['REQUEST_URI']));
