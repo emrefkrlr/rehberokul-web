@@ -44,12 +44,12 @@ RewriteRule ^sitemap\.xml/?$ sitemap.php
 
 
 
-#ErrorDocument 400 https://www.rehberokul.com/sayfa-bulunamadi
-#ErrorDocument 401 https://www.rehberokul.com/sayfa-bulunamadi
-#ErrorDocument 403 https://www.rehberokul.com/sayfa-bulunamadi
-#ErrorDocument 404 https://www.rehberokul.com/sayfa-bulunamadi
-#ErrorDocument 500 https://www.rehberokul.com/sayfa-bulunamadi
-#ErrorDocument 502 https://www.rehberokul.com/sayfa-bulunamadi
-#ErrorDocument 504 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 400 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 401 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 403 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 404 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 500 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 502 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 504 https://www.rehberokul.com/sayfa-bulunamadi
 
 Options -Indexes
