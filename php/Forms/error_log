@@ -1,0 +1,44 @@
+[15-Jul-2020 09:10:34 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 290
+[15-Jul-2020 09:10:34 UTC] PHP Fatal error:  Uncaught Exception: Connect Error 1045: Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php:293
+Stack trace:
+#0 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(372): MysqliDb->connect('default')
+#1 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1903): MysqliDb->mysqli()
+#2 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1514): MysqliDb->_prepareQuery()
+#3 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1454): MysqliDb->_buildQuery(NULL, Array)
+#4 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(760): MysqliDb->_buildInsert('user', Array, 'INSERT')
+#5 /var/sites/users/rehberok/public_html/php/Forms/register.php(57): MysqliDb->insert('user', Array)
+#6 {main}
+  thrown in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 293
+[15-Jul-2020 09:12:42 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 290
+[15-Jul-2020 09:12:42 UTC] PHP Fatal error:  Uncaught Exception: Connect Error 1045: Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php:293
+Stack trace:
+#0 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(372): MysqliDb->connect('default')
+#1 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1903): MysqliDb->mysqli()
+#2 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1514): MysqliDb->_prepareQuery()
+#3 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1454): MysqliDb->_buildQuery(NULL, Array)
+#4 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(760): MysqliDb->_buildInsert('user', Array, 'INSERT')
+#5 /var/sites/users/rehberok/public_html/php/Forms/register.php(57): MysqliDb->insert('user', Array)
+#6 {main}
+  thrown in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 293
+[15-Jul-2020 09:19:08 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 290
+[15-Jul-2020 09:19:08 UTC] PHP Fatal error:  Uncaught Exception: Connect Error 1045: Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php:293
+Stack trace:
+#0 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(372): MysqliDb->connect('default')
+#1 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1903): MysqliDb->mysqli()
+#2 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1514): MysqliDb->_prepareQuery()
+#3 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1454): MysqliDb->_buildQuery(NULL, Array)
+#4 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(760): MysqliDb->_buildInsert('user', Array, 'INSERT')
+#5 /var/sites/users/rehberok/public_html/php/Forms/register.php(57): MysqliDb->insert('user', Array)
+#6 {main}
+  thrown in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 293
+[15-Jul-2020 09:20:11 UTC] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 290
+[15-Jul-2020 09:20:11 UTC] PHP Fatal error:  Uncaught Exception: Connect Error 1045: Access denied for user 'demosite_rehberokuluser'@'localhost' (using password: YES) in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php:293
+Stack trace:
+#0 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(372): MysqliDb->connect('default')
+#1 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1903): MysqliDb->mysqli()
+#2 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1514): MysqliDb->_prepareQuery()
+#3 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(1454): MysqliDb->_buildQuery(NULL, Array)
+#4 /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php(760): MysqliDb->_buildInsert('user', Array, 'INSERT')
+#5 /var/sites/users/rehberok/public_html/php/Forms/register.php(57): MysqliDb->insert('user', Array)
+#6 {main}
+  thrown in /var/sites/users/rehberok/public_html/php/Classes/MysqliDb.php on line 293

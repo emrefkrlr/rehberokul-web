@@ -1,0 +1,55 @@
+/* Add here all your CSS customizations */
+.td-middle {
+    vertical-align: middle !important;
+}
+
+.disable-summernote {
+    pointer-events: none !important;
+    opacity: 0.4 !important;
+}
+
+img#asd, img.asd { 
+    max-width: 100px !important;
+    max-height: 100px !important;
+}
+
+.sticky_treeview {
+/*   position: -webkit-sticky;
+   position: sticky;
+   top: 0px;*/
+   margin-bottom: 20px;
+}
+.popup-gallery {
+    overflow-y: auto; 
+    max-height: 400px;
+}
+#serv_modal {
+    height: 700px;
+}
+
+.jstree-open > .jstree-ocl { 
+    background:transparent;
+}
+.jstree-open > .jstree-ocl:after { content:"+"; }
+
+.jstree-closed > .jstree-ocl { 
+    background:transparent;
+}
+.jstree-closed > .jstree-ocl:after { content:"+"; }
+
+.selected_img {
+    border-color: #C1E0FF; 
+    border-width:3px;
+    border-style:solid;
+}
+
+.jstree-container-ul {
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 400px;
+    max-width: 200px;
+}
+
+li.nav-active a span, li.nav-active a i {
+    color: #0088cc;
+}
