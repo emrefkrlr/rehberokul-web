@@ -6,7 +6,12 @@
     $pageSocialImagePath = "images/rehberokul/rehber-okul.jpg";
     $twitterUsername = "rehberokul";
     $pageUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+if (SUBFOLDER){
+    $robotsStatus = "noindex, nofollow";
+}else{
     $robotsStatus = "index, follow";
+}
+
 
 $getCategoryCount = $db->query("SELECT tag.name, COUNT(tag.name) as count, tag.link FROM `blog_tags`join tag on tag.id = blog_tags.tag_id GROUP BY tag.name, tag.link");
 $getPopulerArticles = $db->query("SELECT * FROM blog where id in (SELECT blog_id FROM comment WHERE blog_id <> 0 )");

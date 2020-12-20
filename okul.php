@@ -1,6 +1,11 @@
 <?php
     require_once('php/Core.php');
+if (SUBFOLDER){
+    $robotsStatus = "noindex, nofollow";
+}else{
     $robotsStatus = "index, follow";
+}
+
     function turkcetarih_formati($format, $datetime = 'now'){
 	    $z = date("$format", strtotime($datetime));
 	    $gun_dizi = array(

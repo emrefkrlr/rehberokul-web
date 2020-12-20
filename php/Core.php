@@ -4,6 +4,7 @@
     define("WEBURL","http://localhost:8888/rehberokul-web/");
     define("SITENAME","Rehber Okul");
     define("INFOSECVAL","e057857db2cef2bdb5d89fa91505d499bd87d975");
+    define("SUBFOLDER", true);
 
     require_once('Classes/MysqliDb.php');
     require_once('Classes/Security.php');

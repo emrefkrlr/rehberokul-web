@@ -1,6 +1,6 @@
 <?php
 require_once('php/Core.php');
-$robotsStatus = "index, follow";
+$robotsStatus = "noindex, nofollow";
 
 if (isset($_POST['searchTerm'])) {
     $searchTerm = $_POST['searchTerm'];

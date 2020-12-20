@@ -41,7 +41,12 @@
     $pageSocialImagePath = "images/rehberokul/rehber-okul.jpg";
     $twitterUsername = "rehberokul";
     $pageUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+if (SUBFOLDER){
+    $robotsStatus = "noindex, nofollow";
+}else{
     $robotsStatus = "index, follow";
+}
+
     function GetIP(){
 	    if(getenv("HTTP_CLIENT_IP")) {
 	        $ip = getenv("HTTP_CLIENT_IP");
