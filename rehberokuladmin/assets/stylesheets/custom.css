@@ -1,0 +1,19 @@
+/* Add here all your CSS customizations */
+.td-middle {
+    vertical-align: middle !important;
+}
+
+div#dsbl-haber.col-md-6 {
+    pointer-events: none !important;
+    opacity: 0.4 !important;
+}
+
+img#asd { 
+    max-width: 400px !important;
+    max-height: 300px !important;
+}
+
+.check_news, .check_post
+{
+    display: none;
+}

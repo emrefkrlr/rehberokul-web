@@ -1,0 +1,55 @@
+RewriteEngine On
+
+
+RewriteRule ^bolge/([a-zA-Z0-9_-]+) bolge.php/$1
+RewriteRule ^sifre-yenileme/([a-zA-Z0-9_-]+) sifre-sifirlama.php?code=$1
+RewriteRule ^okul/([a-zA-Z0-9_-]+) okul.php?okulSeflink=$1
+RewriteRule ^okul-tipi/([a-zA-Z0-9_-]+) okul-tipi.php?okulTipiSeflink=$1
+
+RewriteRule ^kategori/([a-zA-Z0-9_-]+)/([0-9]*) kategori.php/$1?sayfa=$2
+RewriteRule ^kategori/([a-zA-Z0-9_-]+) kategori.php/$1
+#RewriteRule ^kategori kategori.php
+
+RewriteRule ^rehber-blog/sayfa/([0-9]*) blog.php?sayfa=$1
+RewriteRule ^rehber-blog/([a-zA-Z0-9_-]+) blog-icerik.php?yaziSeflink=$1
+RewriteRule ^rehber-blog?$ blog.php
+
+
+RewriteRule ^arama-sonucu/([a-zA-Z0-9_-]+) arama-sonucu.php?sayfaNo=$1
+RewriteRule ^arama-sonucu?$ arama-sonucu.php
+RewriteRule ^talepler?$ talepler.php
+RewriteRule ^iletisim?$ iletisim.php
+RewriteRule ^paketler?$ paketler.php
+RewriteRule ^cikis-yap/([a-zA-Z0-9_-]+) cikis.php?sayfa=$1
+RewriteRule ^cikis-yap?$ cikis.php
+RewriteRule ^sayfa-bulunamadi?$ 404.php
+RewriteRule ^kisisel-verilerin-islenmesine-dair-bilgilendirme-kullanimi?$ kvkk-bilgilendirme.php
+RewriteRule ^hesap-dogrulama/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+) hesap-dogrulama.php?userLink=$1&userToken=$2
+RewriteRule ^okul-dogrulama/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+) okul-dogrulama.php?schoolLink=$1&schoolToken=$2
+RewriteRule ^Robots.txt?$ robot.txt
+
+#develop
+
+RewriteRule ^search?$ search.php
+RewriteRule ^anaokulu/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+) anaokulu.php/$1?sayfa=$2
+RewriteRule ^anaokulu/([a-zA-Z0-9_-]+) anaokulu.php/$1
+RewriteRule ^ilkokul/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+) ilkokul.php/$1?sayfa=$2
+RewriteRule ^ilkokul/([a-zA-Z0-9_-]+) ilkokul.php/$1
+RewriteRule ^ortaokul/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+) ortaokul.php/$1?sayfa=$2
+RewriteRule ^ortaokul/([a-zA-Z0-9_-]+) ortaokul.php/$1
+RewriteRule ^lise/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+) lise.php/$1?sayfa=$2
+RewriteRule ^lise/([a-zA-Z0-9_-]+) lise.php/$1
+RewriteRule ^sitemap/([a-zA-Z0-9_-]+)\.xml sitemap/$1.php
+RewriteRule ^sitemap\.xml/?$ sitemap.php
+
+
+
+ErrorDocument 400 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 401 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 403 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 404 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 500 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 502 https://www.rehberokul.com/sayfa-bulunamadi
+ErrorDocument 504 https://www.rehberokul.com/sayfa-bulunamadi
+
+Options -Indexes
