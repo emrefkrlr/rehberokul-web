@@ -10,9 +10,9 @@
                                     <img src="images/rehberokul/rehber-okul-logo.png" alt="logo" class="xs-pt">
                                 </div>
                                 <div class="col-sm-9 col-md-9">
-                                    <p class="hasimg">Rehber Okul, enuygun eğitim kurumunu bulmak için doğru yerdesin.</p>
-                                    <p class="hasimg">Binlerce kurum arasında sana enuygun okulu bulmak için sadece bir kaç dakikanı ayır. Doğru kararı vermek için okulun resimlerini, yorum ve değerlendirme puanını incele.</p>
-                                    <p class="hasimg">Alanında uzman eğitimci kadromuzla size yardım etmekten mutluluk duyarız. Bizlere yada talepler ekranında kriterlerinizi belirtin. Okullar sizi arasın.</p>
+                                    <p class="hasimg">Sana en uygun okulu bulman için Rehber Okul olarak buradayız!</p>
+                                    <p class="hasimg">Binlerce eğitim kurumu arasında kendi kriterlerine  uyanları bulmak için sadece birkaç dakika ayır. Fotoğrafları incele, değerlendirme puanlarına bak, yorumları oku ve okulunu seç!</p>
+                                    <p class="hasimg">Rehber Okul olarak , alanında uzman eğitimci kadromuzla,  sizlere yardımcı olmak için sabırsızlanıyoruz. Okullarla ilgili daha fazla bilgi edinmek için "Talepler" ekranında kriterlerinizi belirtebilir veya direkt bizlere ulaşabilirsiniz.</p>
                                 </div>
                             </div>
                         </div>
