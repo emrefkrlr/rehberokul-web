@@ -14,9 +14,8 @@ foreach ($getBlogs as $blogLink) {
     $date = explode(" ", $blogLink['publish_date']);
     echo '<url>' . PHP_EOL;
     echo '<loc>'. WEBURL . 'rehber-blog/' . $blogLink['link'] .'</loc>' . PHP_EOL;
-    echo '<lastmod>' . $date[0] . '</lastmod>'. PHP_EOL;
     echo '<changefreq>weakly</changefreq>' . PHP_EOL;
-    echo '<priority>'. '0.8' . '</priority>' . PHP_EOL;
+    echo '<priority>'. '0.6' . '</priority>' . PHP_EOL;
     echo '</url>' . PHP_EOL;
 }
 echo '</urlset>' . PHP_EOL;

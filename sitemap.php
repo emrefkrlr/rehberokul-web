@@ -6,37 +6,22 @@ echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="htt
 
 echo '<url>' . PHP_EOL;
 echo '<loc>https://www.rehberokul.com/sitemap/sitemap-category.xml</loc>' . PHP_EOL;
-echo '<lastmod>' . date('Y-m-dTH:i:sP', time()) . '</lastmod>'. PHP_EOL;
-echo '<changefreq>daily</changefreq>' . PHP_EOL;
-echo '<priority>'. '1.0' . '</priority>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '<url>' . PHP_EOL;
 echo '<loc>https://www.rehberokul.com/sitemap/sitemap-landing.xml</loc>' . PHP_EOL;
-echo '<lastmod>' . date('Y-m-dTH:i:sP', time()) . '</lastmod>'. PHP_EOL;
-echo '<changefreq>daily</changefreq>' . PHP_EOL;
-echo '<priority>'. '1.0' . '</priority>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '<url>' . PHP_EOL;
 echo '<loc>https://www.rehberokul.com/sitemap/sitemap-blog.xml</loc>' . PHP_EOL;
-echo '<lastmod>' . date('Y-m-dTH:i:sP', time()) . '</lastmod>'. PHP_EOL;
-echo '<changefreq>daily</changefreq>' . PHP_EOL;
-echo '<priority>'. '1.0' . '</priority>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '<url>' . PHP_EOL;
 echo '<loc>https://www.rehberokul.com/sitemap/sitemap-school.xml</loc>' . PHP_EOL;
-echo '<lastmod>' . date('Y-m-dTH:i:sP', time()) . '</lastmod>'. PHP_EOL;
-echo '<changefreq>daily</changefreq>' . PHP_EOL;
-echo '<priority>'. '1.0' . '</priority>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '<url>' . PHP_EOL;
 echo '<loc>https://www.rehberokul.com/sitemap/sitemap-pages.xml</loc>' . PHP_EOL;
-echo '<lastmod>' . date('Y-m-dTH:i:sP', time()) . '</lastmod>'. PHP_EOL;
-echo '<changefreq>daily</changefreq>' . PHP_EOL;
-echo '<priority>'. '1.0' . '</priority>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
 echo '</urlset>' . PHP_EOL;

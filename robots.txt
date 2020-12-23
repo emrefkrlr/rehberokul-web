@@ -1,1 +1,3 @@
+User-Agent: *
+Allow:
 Sitemap: https://www.rehberokul.com/sitemap.xml
