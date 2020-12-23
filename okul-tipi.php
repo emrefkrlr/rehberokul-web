@@ -3,31 +3,31 @@
     if (isset($_GET['okulTipiSeflink'])) {
         $okulTipiSeflink = $_GET['okulTipiSeflink'];
         if ($okulTipiSeflink == "anaokulu-kres") {
-        	$pageTitle = "Anaokulu & Kreş";
+        	$pageTitle = "Anaokulu &amp; Kreşler Hakkında Her Şey Burada  - Rehber Okul";
         	$pageH = "Anaokulları & Kreşler";
         	$pageDesc = "Sana enuygun anaokulu & kreşi bulmak için arama yap";
-        	$pageDescription = "Anaokullar ve kreşler hakkındaki detaylı bilgileri, anaokulu fiyatları, veli değerlendirmeleri ve tüm eğitim olanaklarına ulaşabilirsin.";
+        	$pageDescription = "Anaokullar ve kreş fiyatlarını, veli değerlendirmeleri ve yorumları okulların profil sayfasından ziyaret et. Türkiye &#39;de ki en iyi anaokullarını hemen incele.";
         	$pageHsmall = "anaokulları & kreşler";
         	$schoolType = 1;
         } else if ($okulTipiSeflink == "ilk-okul") {
-        	$pageTitle = "İlkokul";
+        	$pageTitle = "Bölgende ki Özel İlkokulları Hemen İncele - Rehber Okul";
         	$pageH = "İlkokullar";
         	$pageDesc = "Sana enuygun ilkokulları bulmak için arama yap";
-        	$pageDescription = "İlkokullar için kriterlerlerine en uygun özel okul bilgilerini ve fiyatlarını, detaylı görselleri inceleyerek bölgendeki en iyi ilkokulu hemen seç.";
+        	$pageDescription = "İstanbul, Ankara ve İzmir özel ilkokulları hemen ara. Okulun görsellerini, fiziksel imkanları, servis imkanı ve okul hakkında detaylı bilgileri hemen incele.";
         	$pageHsmall = "ilkokullar";
         	$schoolType = 2;
         } else if ($okulTipiSeflink == "orta-okul") {
-        	$pageTitle = "Ortaokul";
+        	$pageTitle = "Ortaokul Düzeyinde Eğitim Veren Özel Okullar - Rehber Okul";
         	$pageH = "Ortaokullar";
         	$pageDesc = "Sana enuygun ortaokulları bulmak için arama yap";
         	$pageDescription = "Çocuğunuz için eğitim olanaklarını detaylı inceleyebileceğiniz, diğer veli yorumlarını inceleyerek bölgendeki özel ortaokulları arasında bütçenize en uygun olanı seç.";
         	$pageHsmall = "ortaokullar";
         	$schoolType = 3;
         } else if ($okulTipiSeflink == "lise") {
-        	$pageTitle = "Lise";
+        	$pageTitle = "En İyi Özel Liseler ve Fiyatları Burada - Rehber Okul";
         	$pageH = "Liseler";
         	$pageDesc = "Sana enuygun liseleri bulmak için arama yap";
-        	$pageDescription = "2020 özel lise fiyatlarını, bölgenizdeki özel lise ve kolejleri karşılaştırıp çoçuğunuz için en iyi liseyi keşfet.";
+        	$pageDescription = "Türkiye &#39;de ki en iyi özel liseleri, bursluluk sınavları ve fiyatlarını hemen incele. Bölgende bulunan en popüler liseler için hemen tıkla araştırmaya başla.";
         	$pageHsmall = "liseler";
         	$schoolType = 4;
         }
