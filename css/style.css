@@ -1621,11 +1621,6 @@
  .dir-pa-sp-top-bg {
      background: #fff;
 }
- .dir-alp {
-     background: url(../images/list-p-bg.jpeg) no-repeat center top;
-     background-size: cover;
-     background-attachment: fixed;
-}
  .dir-alp-1 {
      background: #fbf7eb;
      margin-top: 0px;
