@@ -62,13 +62,14 @@ if (SUBFOLDER){
         	$schoolState = $singleSchool['state'];
         	$schoolType = $singleSchool['type'];
         	$schoolName = $singleSchool['name'];
-        	$pageTitle = $schoolName;
+        	$pageTitle = $schoolName . '- Rehber Okul';
         	$schoolAddress = $singleSchool['address'];
         	$db->where("sehir_key", $singleSchool['sehir_key']);
 			$schoolCity = mb_convert_case(mb_strtolower($db->getOne("city")['name']), MB_CASE_TITLE, "UTF-8");
 			$db->where("ilce_key", $singleSchool['ilce_key']);
 			$schoolTown = mb_convert_case(mb_strtolower($db->getOne("town")['name']), MB_CASE_TITLE, "UTF-8");
         	$schoolDescription = htmlspecialchars_decode($singleSchool['description']);
+            $pageDescription = $schoolCity .' '. $schoolTown . ' bölgesinde yer alan ' . $schoolName . ' fiyatları, erken kayıt indirimi, bursluluk sınavı ve tüm detaylar için hemen tıkla.';
         	$schoolDiscount = $singleSchool['discount'];
         	$schoolPrice = $singleSchool['price'];
         	$schoolPoint = $singleSchool['points'];
