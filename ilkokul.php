@@ -15,7 +15,7 @@ if (isset($_SERVER['REQUEST_URI'])) {
 
     $getRegionQuery = $db->rawQuery("SELECT * FROM landing WHERE page_url = '".$getRegion."' LIMIT 1");
     // sayfa bilgileri
-    $pageTitle = $getRegionQuery[0]['page_title']. ' | Rehber Okul';
+    $pageTitle = $getRegionQuery[0]['page_title']. ' - Rehber Okul';
     $pageDescription = $getRegionQuery[0]['page_description'];
     $regionQuery = $getRegionQuery[0]['query'];
     $searchTerm = $getRegionQuery[0]['page_name'];
