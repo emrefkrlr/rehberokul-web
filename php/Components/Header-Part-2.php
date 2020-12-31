@@ -16,12 +16,14 @@
                                     <li><a href="<?php echo WEBURL; ?>okul-tipi/ilk-okul">İlk Okul</a></li>
                                     <li><a href="<?php echo WEBURL; ?>okul-tipi/orta-okul">Orta Okul</a></li>
                                     <li><a href="<?php echo WEBURL; ?>okul-tipi/lise">Lise</a></li>
+                                    <li><a href="<?php echo WEBURL; ?>talepler">Talepler</a></li>
                                 </ul>
                             </div>
                             <div class="dz-menu-inn">
                                 <h4>Rehber Okul</h4>
                                 <ul>
                                     <li><a href="<?php echo WEBURL; ?>talepler">Talepler</a></li>
+                                    <li><a href="<?php echo WEBURL; ?>bursluluk-sinavi">Bursluluk Sınavları</a></li>
                                     <li><a href="<?php echo WEBURL; ?>rehber-blog">Rehber Blog</a></li>
                                     <li><a href="<?php echo WEBURL; ?>iletisim">İletişim</a></li>
                                 </ul>
@@ -93,6 +95,7 @@
                     <h5>Rehber Okul</h5>
                     <ul>
                         <li><a href="<?php echo WEBURL; ?>talepler">Talepler</a></li>
+                        <li><a href="<?php echo WEBURL; ?>bursluluk-sinavi">Bursluluk Sınavları</a></li>
                         <li><a href="<?php echo WEBURL; ?>rehber-blog">Rehber Blog</a></li>
                         <li><a href="<?php echo WEBURL; ?>iletisim">İletişim</a></li>
                     </ul>
