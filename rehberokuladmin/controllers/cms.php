@@ -31,6 +31,8 @@ class CMS extends Controller {
         $this->returnView($viewModel->schooltypeEdit($link), true); //call indeks method of user model
     }
 
+    // LANDINGS
+
     protected function landings() {
         self::$title = 'Bölge İçerikleri';
         $viewModel = new LandingsModel();
@@ -48,6 +50,27 @@ class CMS extends Controller {
         $viewModel = new LandingsModel();
         $this->returnView($viewModel->landingEdit($id), true); //call indeks method of user model
     }
+
+    // SCGOLARSHIP
+
+    protected function scholarship() {
+        self::$title = 'Bursluluk Sınavı';
+        $viewModel = new ScholarshipModel();
+        $this->returnView($viewModel->scholarship(), true); //call indeks method of user model
+    }
+
+    protected function scholarshipAdd() {
+        self::$title = 'Bursluluk Ekle';
+        $viewModel = new ScholarshipModel();
+        $this->returnView($viewModel->scholarshipAdd(), true); //call indeks method of user model
+    }
+
+    protected function scholarshipPost() {
+        $viewModel = new ScholarshipModel();
+        $this->returnView($viewModel->scholarshipPost(), true); //call indeks method of user model
+    }
+
+
 
 
 
