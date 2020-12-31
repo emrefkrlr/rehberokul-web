@@ -8,6 +8,7 @@ $pages = [
     'okul-tipi/orta-okul',
     'okul-tipi/lise',
     'talepler',
+    'bursluluk-sinavi',
     'rehber-blog',
     'iletisim',
 ];

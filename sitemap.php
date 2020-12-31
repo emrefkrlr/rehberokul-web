@@ -24,6 +24,11 @@ echo '<url>' . PHP_EOL;
 echo '<loc>https://www.rehberokul.com/sitemap/sitemap-pages.xml</loc>' . PHP_EOL;
 echo '</url>' . PHP_EOL;
 
+
+echo '<url>' . PHP_EOL;
+echo '<loc>https://www.rehberokul.com/sitemap/bursluluk-sinavi.xml</loc>' . PHP_EOL;
+echo '</url>' . PHP_EOL;
+
 echo '</urlset>' . PHP_EOL;
 
 
