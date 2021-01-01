@@ -83,7 +83,7 @@ class ScholarshipModel extends DBOperation {
                     $priority = (int)$post['priority'];
                     $content = htmlspecialchars($_POST['content']);
                     $content = str_replace("'", "''", $content);
-                    $scholarship_slug =URLHelper::seflinkGenerator($post['title'].'-bursluluk-sinavi-'.$year);
+                    $scholarship_slug =URLHelper::seflinkGenerator($post['title']);
 
                     $created_date = date("Y-m-d H:i:s");
                     $updated_date = date("Y-m-d H:i:s");
