@@ -149,20 +149,6 @@ if (isset($_GET['sayfa'])) {
                                                 </a>
                                             <?php endif; ?>
 
-                                            <?php if ($scholarship['collage_id'] != 0):?>
-                                                <?php
-                                                $db->where('id', $scholarship['collage_id']);
-                                                $college_link = $db->get('college', null, 'slug');
-                                                ?>
-
-                                                <a href="<?=WEBURL.'kolej/'.$college_link[0]['slug']?>">
-                                                    Kolej sayfasını ziyaret et
-                                                </a>
-                                            <?php endif; ?>
-
-
-
-
                                         </ul>
 									</div>
 								</div>
