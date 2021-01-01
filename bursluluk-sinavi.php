@@ -67,7 +67,7 @@ if (isset($_GET['sayfa'])) {
     <div class="row">
         <div class="dir-hr1">
             <div class="dir-ho-t-tit">
-                <h1>Özel Okul Bursluluk Sınavları 2021</h1>
+                <h1>Özel Okul Bursluluk Sınavı</h1>
                 <p>Özel okul ve kolejler için açıklanan sınav tarihleri burda</p>
             </div>
             <form action="search" method="post" autocomplete="off">
@@ -87,10 +87,12 @@ if (isset($_GET['sayfa'])) {
 		<div class="container dir-hom-pre-tit">
 			<div class="row">
 				<div class="xxs-pb">
-					<h2 class="xxs-pb">Bursluluk Sınavı</h2>
+					<h2 class="xxs-pb">Özel Okul Bursluluk Sınavı Tarihi 2021</h2>
 					<p class="under-h-title-info">
                         Yüzlerce özel okul ve kolejin 2021 bursluluk sınav tarihlerini ve diğer detaylarını sizler için
-                        bir araya getirdik. Birçok özel okulun bursluluk sınavına hızlıca başvuru yapabileceksiniz. Listemiz
+                        bir araya getirdik. Özel okullar düzenledikleri bursluluk sınavı neticesinde başarılı olan öğrenciler için
+                        <b>%100 e varan</b> bursluluk vermektedir. Okullara ait sınav takvimi ve detaylar için <b> Hemen Başvur </b> butonuna tıkla
+                        Birçok özel okulun bursluluk sınavına hızlıca başvuru yapabileceksiniz. Listemiz
                         bursluluk sınav tarihlerini güncelledikçe sitemiz de yer alacaktır. Takipte kalın.
                     </p>
 				</div>
