@@ -55,7 +55,7 @@ class FileUploader {
 
 
     public static function uploadSingleFileToServerScholdership($file_input_name,$ttl) {
-        $targetdir = '../images/scholdership/';
+        $targetdir = '../images/scholarship/';
         if(empty($_FILES[$file_input_name]))
         {
             exit();
