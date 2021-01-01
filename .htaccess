@@ -14,6 +14,11 @@ RewriteRule ^rehber-blog/sayfa/([0-9]*) blog.php?sayfa=$1
 RewriteRule ^rehber-blog/([a-zA-Z0-9_-]+) blog-icerik.php?yaziSeflink=$1
 RewriteRule ^rehber-blog?$ blog.php
 
+#bursluluk
+RewriteRule ^bursluluk-sinavi/sayfa/([0-9]*) bursluluk-sinavi.php?sayfa=$1
+RewriteRule ^bursluluk-sinavi/([a-zA-Z0-9_-]+) bursluluk-detay.php?yaziSeflink=$1
+RewriteRule ^bursluluk-sinavi?$ bursluluk-sinavi.php
+
 
 RewriteRule ^arama-sonucu/([a-zA-Z0-9_-]+) arama-sonucu.php?sayfaNo=$1
 RewriteRule ^arama-sonucu?$ arama-sonucu.php

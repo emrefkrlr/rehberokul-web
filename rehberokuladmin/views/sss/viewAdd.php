@@ -20,6 +20,7 @@
                         <option value="orta-okul">Ortaokul</option>
                         <option value="lise">Lise</option>
                         <option value="okul-detay">Okul Detay</option>
+                        <option value="bursluluk-sınavi">Bursluluk Sınavı</option>
                         <?php foreach ($viewModel as $landings): ?>
                             <option value="<?= $landings['page_url'] ?>"><?= $landings['page_name'] ?></option>
                         <?php endforeach;?>

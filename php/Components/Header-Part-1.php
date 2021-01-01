@@ -18,7 +18,8 @@
                         <li><a href="<?php echo WEBURL; ?>okul-tipi/ilk-okul">İlk Okul</a></li>
                         <li><a href="<?php echo WEBURL; ?>okul-tipi/orta-okul">Orta Okul</a></li>
                         <li><a href="<?php echo WEBURL; ?>okul-tipi/lise">Lise</a></li>
-                        <li><a href="<?php echo WEBURL; ?>talepler">Talepler</a></li>
+                        <li><a href="<?php echo WEBURL; ?>bursluluk-sinavi"><i class="fa fa-bookmark" style="color: tomato"></i> Bursluluk Sınavları</a></li>
+                        <!-- <li><a href="<?php echo WEBURL; ?>talepler">Talepler</a></li> -->
                         <?php
                             if (isset($_SESSION['user_data']) && $_SESSION['is_logged_in']) {
                                 $userProfileLink = 'https://www.rehberokul.com/rehberokuladmin/user/viewEdit/'.$_SESSION['user_data']['link'];
