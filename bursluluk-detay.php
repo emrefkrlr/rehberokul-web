@@ -26,6 +26,7 @@ if (isset($_SERVER['REQUEST_URI']))
 
 $pageTitle = $scholarship['page_title'];
 $pageDescription = $scholarship['page_description'];
+$pageUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 
 <!DOCTYPE html>
