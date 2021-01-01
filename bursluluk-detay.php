@@ -11,7 +11,7 @@ if (isset($_SERVER['REQUEST_URI']))
     $url = array_filter(explode('/', $_SERVER['REQUEST_URI']));
     if ($url > 2) {
         if(SUBFOLDER){
-            $getScholarshipSlug = $url[3];
+            $getScholarshipSlug = $url[2];
         }else{
             $getScholarshipSlug = $url[2];
         }
