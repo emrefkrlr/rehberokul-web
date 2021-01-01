@@ -78,6 +78,7 @@ class ScholarshipModel extends DBOperation {
 
                     $year = $post['year'];
                     $title = str_replace("&#39;","''",$post['title']);
+                    $pageTitle = str_replace("&#39;","''",$post['page_title']);
                     $pageDescription = str_replace("&#39;","''",$post['page_description']);
                     $header = str_replace("&#39;","''",$post['header']);
                     $priority = (int)$post['priority'];
@@ -90,10 +91,10 @@ class ScholarshipModel extends DBOperation {
                     $this->summernoteUpload(URLHelper::seflinkGenerator($title));
 
                     $this->save('scholarship',
-                        array('school_id', 'collage_id', 'scholarship_slug', 'title', 'page_description', 'header', 'content', 'img',
+                        array('school_id', 'collage_id', 'scholarship_slug', 'title', 'page_title', 'page_description', 'header', 'content', 'img',
                             'status', 'priority', 'created_date', 'updated_date'
                             ),
-                        array($school_id, $college_id,$scholarship_slug,$title,$pageDescription,$header,$content,
+                        array($school_id, $college_id,$scholarship_slug,$title, $pageTitle, $pageDescription,$header,$content,
                             FileUploader::uploadSingleFileToServerScholdership('file-icerik', URLHelper::seflinkGenerator($post['title'].'-'.date("Y-m-d H:i:s"))),
                             1,$priority,$created_date,$updated_date
                     ));
