@@ -19,8 +19,6 @@ if (isset($_SERVER['REQUEST_URI']))
     }else{
         $getScholarshipSlug = ltrim($_SERVER['REQUEST_URI'], "/");
     }
-    echo $getScholarshipSlug;
-    print_r($url);
     $db->where('scholarship_slug', $getScholarshipSlug);
     $scholarship = $db->getOne('scholarship');
 }
