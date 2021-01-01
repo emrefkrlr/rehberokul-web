@@ -56,6 +56,16 @@
             </div>
 
             <div class="form-group">
+                <label class="col-md-3 control-label" for="page_title">
+                    Sayfa Title
+                    <span class="required">*</span>
+                </label>
+                <div class="col-md-9">
+                    <input type="text" class="form-control" id="page_title" name="page_title"  title='page title Girmediniz!' value="" required />
+                </div>
+            </div>
+
+            <div class="form-group">
                 <label class="col-md-3 control-label" for="title">
                     Sayfa Description
                     <span class="required">*</span>

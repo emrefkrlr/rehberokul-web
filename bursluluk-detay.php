@@ -24,7 +24,7 @@ if (isset($_SERVER['REQUEST_URI']))
 }
 
 
-$pageTitle = $scholarship['title'];
+$pageTitle = $scholarship['page_title'];
 $pageDescription = $scholarship['page_description'];
 ?>
 
