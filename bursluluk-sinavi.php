@@ -117,7 +117,7 @@ if (isset($_GET['sayfa'])) {
                         $limitH3++;
                     ?>
 
-				<div class="col-md-6">
+				<div class="col-md-8 col-md-offset-2">
                     <a href="<?= WEBURL.'bursluluk-sinavi/'.$scholarship['scholarship_slug'] ?>" title="<?=$scholarship['scholarship_slug'].'-Rehber Okul'?>">
 						<div>
 							<div class="home-list-pop">
