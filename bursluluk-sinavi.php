@@ -127,6 +127,7 @@ if (isset($_GET['sayfa'])) {
                 $veri = file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=d08672270e61b91e4753c0221ea2284c537967771767a1bec765659885664846&ip=$ipkontrol");
                 $dizi = $veri;
                 $deger = explode(";",$dizi);
+                print_r($deger);
 
                 ?>
 
