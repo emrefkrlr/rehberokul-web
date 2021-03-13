@@ -110,6 +110,7 @@ if (isset($_GET['sayfa'])) {
                     </div>
                 </div>
 
+
                 <?php
                 try {
                     $pageLimit = 20;
