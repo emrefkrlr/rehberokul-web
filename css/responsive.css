@@ -40,6 +40,9 @@
 /*-------------------------------------------------------*/
 
 @media screen and (max-width: 1200px) {
+    .free-consultancy{
+        flex-direction: column;
+    }
     .ts-menu-2 {
         display: none;
     }
