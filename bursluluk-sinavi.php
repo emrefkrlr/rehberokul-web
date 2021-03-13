@@ -107,6 +107,28 @@ if (isset($_GET['sayfa'])) {
 
                 }
                 ?>
+                <?php
+
+                function GetIP(){
+                    if(getenv("HTTP_CLIENT_IP")) {
+                        $ip = getenv("HTTP_CLIENT_IP");
+                    } elseif(getenv("HTTP_X_FORWARDED_FOR")) {
+                        $ip = getenv("HTTP_X_FORWARDED_FOR");
+                        if (strstr($ip, ',')) {
+                            $tmp = explode (',', $ip);
+                            $ip = trim($tmp[0]);
+                        }
+                    } else {
+                        $ip = getenv("REMOTE_ADDR");
+                    }
+                    return $ip;
+                }
+                $ipkontrol = GetIP();
+                $veri = file_get_contents("http://api.ipinfodb.com/v3/ip-city/?key=d08672270e61b91e4753c0221ea2284c537967771767a1bec765659885664846&ip=$ipkontrol");
+                $dizi = $veri;
+                $deger = explode(";",$dizi);
+
+                ?>
 
                 <?php foreach ($scholarshipsByPage as $scholarshipByPage):?>
                     <?php
@@ -158,6 +180,21 @@ if (isset($_GET['sayfa'])) {
 				</div>
 
                 <?php endforeach; ?>
+
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="free-consultancy">
+                        <div class="consultancy-icon">
+                            <img src="images/opportunity.svg" alt="">
+                        </div>
+                        <div class="consultancy-title">
+                            Yaşadığın bölgede popüler özel okulları görmek ister misin?
+                            <p>Sana en uygun özel okulları görüntülemek için hemen tıkla! </p>
+                        </div>
+                        <div class="consultancy-action">
+                            <a href="#consultancy-form">Okulları Gör</a>
+                        </div>
+                    </div>
+                </div>
 
 			</div>
 		</div>
