@@ -95,6 +95,21 @@ if (isset($_GET['sayfa'])) {
                     </p>
 				</div>
 
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="free-consultancy">
+                        <div class="consultancy-icon">
+                            <img src="images/opportunity.svg" alt="">
+                        </div>
+                        <div class="consultancy-title">
+                            Ataşehir' deki popüler özel okulları görmek ister misin?
+                            <p>Sana en uygun özel okulları görüntülemek için hemen tıkla! </p>
+                        </div>
+                        <div class="consultancy-action">
+                            <a href="<?=WEBURL.'bolge/atasehir-ozel-okullar'?>">Okulları Gör</a>
+                        </div>
+                    </div>
+                </div>
+
                 <?php
                 try {
                     $pageLimit = 20;
@@ -114,21 +129,6 @@ if (isset($_GET['sayfa'])) {
                         $scholarship = $db->getOne("scholarship");
                         $limitH3++;
                     ?>
-
-                    <div class="col-md-8 col-md-offset-2">
-                        <div class="free-consultancy">
-                            <div class="consultancy-icon">
-                                <img src="images/opportunity.svg" alt="">
-                            </div>
-                            <div class="consultancy-title">
-                                Ataşehir' deki popüler özel okulları görmek ister misin?
-                                <p>Sana en uygun özel okulları görüntülemek için hemen tıkla! </p>
-                            </div>
-                            <div class="consultancy-action">
-                                <a href="<?=WEBURL.'bolge/atasehir-ozel-okullar'?>">Okulları Gör</a>
-                            </div>
-                        </div>
-                    </div>
 
 				<div class="col-md-8 col-md-offset-2">
                     <a href="<?= WEBURL.'bursluluk-sinavi/'.$scholarship['scholarship_slug'] ?>" title="<?=$scholarship['scholarship_slug'].'-Rehber Okul'?>">
