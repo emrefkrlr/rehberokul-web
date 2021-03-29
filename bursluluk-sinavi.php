@@ -115,7 +115,7 @@ if (isset($_GET['sayfa'])) {
 
                 <?php
                 try {
-                    $pageLimit = 12;
+                    $pageLimit = 10;
                     if ($pageNumber) {
                         $startPoint = (($pageNumber-1)*$pageLimit);
                     }
