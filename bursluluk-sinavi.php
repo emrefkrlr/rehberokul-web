@@ -9,7 +9,7 @@ $pageTitle = "Özel Okul Bursluluk Sınav Tarihleri - Rehber Okul";
 $pageDescription = "Türkiye genelinde özel okulların 2021 bursluluk sınav tarihlerini hemen incele. Sınav detayları, kabul kriterleri ve daha fazla bilgi için detaylara göz at.";
 $pageUrl = "https://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 
-$getScholarshipIDS = $db->query('SELECT id FROM scholarship');
+$getScholarshipIDS = $db->query('SELECT id FROM scholarship ORDER BY scholarship.priority DESC');
 $totalRow = count($getScholarshipIDS);
 
 if (isset($_GET['sayfa'])) {
