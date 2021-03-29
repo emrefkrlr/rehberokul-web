@@ -97,7 +97,7 @@ if (isset($_GET['sayfa'])) {
                     </p>
 				</div>
 
-                <div class="col-md-6 col-md-offset-0">
+                <div class="col-md-8 col-md-offset-2">
                     <div class="free-consultancy">
                         <div class="consultancy-icon">
                             <img src="images/opportunity.svg" alt="">
@@ -133,7 +133,7 @@ if (isset($_GET['sayfa'])) {
                         $limitH3++;
                     ?>
 
-				<div class="col-md-6 col-md-offset-0">
+				<div class="col-md-8 col-md-offset-2">
                     <a href="<?= WEBURL.'bursluluk-sinavi/'.$scholarship['scholarship_slug'] ?>" title="<?=$scholarship['scholarship_slug'].'-Rehber Okul'?>">
 						<div>
 							<div class="home-list-pop">
