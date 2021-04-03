@@ -96,19 +96,21 @@ if (isset($_GET['sayfa'])) {
 				</div>
 
                 <div class="col-md-8 col-md-offset-2">
-                    <div class="free-consultancy">
+                    <div class="free-consultancy talep-et">
                         <div class="consultancy-icon">
-                            <img src="images/opportunity.svg" alt="">
+                            <img src="images/school.svg" alt="">
                         </div>
                         <div class="consultancy-title">
-                            Ataşehir' deki popüler özel okulları görmek ister misin?
-                            <p>Sana en uygun özel okulları görüntülemek için hemen tıkla! </p>
+                            Sen kriterlerini belirle özel okullar seni arasın!
+                            <p class="talep-et">Fiyat, eğitim olanaklarını seç okullar senin ile iletişime geçsin üstelik çok kolay</p>
                         </div>
                         <div class="consultancy-action">
-                            <a href="<?=WEBURL.'bolge/atasehir-ozel-okullar'?>">Okulları Gör</a>
+                            <a class="telep-et-btn" href="<?=WEBURL.'talepler'?>" target="_blank">Talep Et</a>
                         </div>
                     </div>
                 </div>
+
+
 
 
                 <?php
@@ -135,16 +137,16 @@ if (isset($_GET['sayfa'])) {
 
                 <?php if($kalan == 0):?>
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="free-consultancy talep-et">
+                            <div class="free-consultancy">
                                 <div class="consultancy-icon">
-                                    <img src="images/school.svg" alt="">
+                                    <img src="images/opportunity.svg" alt="">
                                 </div>
                                 <div class="consultancy-title">
-                                    Sen kriterlerini belirle özel okullar seni arasın!
-                                    <p class="talep-et">Fiyat, eğitim olanaklarını seç okullar senin ile iletişime geçsin üstelik çok kolay</p>
+                                    Ataşehir' deki popüler özel okulları görmek ister misin?
+                                    <p>Sana en uygun özel okulları görüntülemek için hemen tıkla! </p>
                                 </div>
                                 <div class="consultancy-action">
-                                    <a class="telep-et-btn" href="<?=WEBURL.'talepler'?>">Talep Et</a>
+                                    <a href="<?=WEBURL.'bolge/atasehir-ozel-okullar'?>" target="_blank">Okulları Gör</a>
                                 </div>
                             </div>
                         </div>
