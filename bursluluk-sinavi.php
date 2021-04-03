@@ -118,7 +118,8 @@ if (isset($_GET['sayfa'])) {
                         $startPoint = (($pageNumber-1)*$pageLimit);
                     }
                     $scholarshipsByPage = array_slice($getScholarshipIDS, $startPoint, $pageLimit);
-                    $limitH3 = 0;
+                    $scholarshipCount = 0;
+                    $kalan = 1;
                 } catch (Exception $e){
 
                 }
@@ -128,9 +129,26 @@ if (isset($_GET['sayfa'])) {
                     <?php
                         $db->where("id", $scholarshipByPage['id']);
                         $scholarship = $db->getOne("scholarship");
-                        $limitH3++;
+                        $scholarshipCount++;
+                        $kalan = $scholarshipCount % 7
                     ?>
 
+                <?php if($kalan == 0):?>
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="free-consultancy talep-et">
+                                <div class="consultancy-icon">
+                                    <img src="images/school.svg" alt="">
+                                </div>
+                                <div class="consultancy-title">
+                                    Sen kriterlerini belirle özel okullar seni arasın!
+                                    <p class="talep-et">Fiyat, eğitim olanaklarını seç okullar senin ile iletişime geçsin üstelik çok kolay</p>
+                                </div>
+                                <div class="consultancy-action">
+                                    <a class="telep-et-btn" href="<?=WEBURL.'talepler'?>">Talep Et</a>
+                                </div>
+                            </div>
+                        </div>
+                <?php endif;?>
 				<div class="col-md-8 col-md-offset-2">
                     <a href="<?= WEBURL.'bursluluk-sinavi/'.$scholarship['scholarship_slug'] ?>" title="<?=$scholarship['scholarship_slug'].'-Rehber Okul'?>">
 						<div>
