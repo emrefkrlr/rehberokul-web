@@ -8,6 +8,10 @@
  * Email:      rn53themes@gmail.com
  * Website:    http://www.rn53themes.net 
  -----------------------------------------------*/
+font ul:not(.browser-default) li {
+    list-style: initial;
+    margin-left: 10px;
+}
 
 .materialize-red {
     background-color: #e51c23 !important;
@@ -2016,8 +2020,9 @@ ul:not(.browser-default) {
     padding-left: 0;
     list-style-type: none;
 }
-ul:not(.browser-default) li {
-    list-style-type: none;
+font ul:not(.browser-default) li {
+    list-style: initial;
+    margin-left: 10px;
 }
 a {
     color: #039be5;
