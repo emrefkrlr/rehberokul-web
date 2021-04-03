@@ -8093,3 +8093,22 @@ body {
 .consultancy-action a:hover{
     background-color: rgba(55, 87, 130, 0.95);
 }
+
+.talep-et{
+    background-color: rgba(55, 87, 130, 5.65);
+}
+
+.consultancy-action > .telep-et-btn{
+    color: #fff;
+    font-weight: 700;
+    padding: 12px;
+    background-color: tomato;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+
+.consultancy-title p.talep-et{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff8e1;
+}
