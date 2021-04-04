@@ -302,6 +302,28 @@ if (SUBFOLDER){
 			</div>
 		</div>
 	</section>
+
+    <section class="com-padd com-padd-redu-bot1 pad-bot-red-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-offset-0">
+                    <div class="free-consultancy talep-et">
+                        <div class="consultancy-icon">
+                            <img src="images/school.svg" alt="">
+                        </div>
+                        <div class="consultancy-title">
+                            Sen kriterlerini belirle özel okullar seni arasın!
+                            <p class="talep-et">Fiyat, eğitim olanaklarını seç okullar senin ile iletişime geçsin üstelik çok kolay</p>
+                        </div>
+                        <div class="consultancy-action">
+                            <a class="telep-et-btn" href="<?=WEBURL.'talepler'?>" target="_blank">Talep Et</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <?php
         try
         {
